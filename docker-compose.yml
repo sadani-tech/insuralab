@@ -1,0 +1,45 @@
+# InsuraLab — local infrastructure.
+#
+# DEFAULT SETUP (what backend/.env.example expects):
+#   Development reuses an existing PostgreSQL 18 container already running on this
+#   machine, exposed on host port 5433, with a dedicated `insuralab` database and
+#   role. Nothing in this file needs to be started for that path.
+#
+#   One-time setup inside that existing container:
+#     docker exec -it <postgres-container> psql -U postgres \
+#       -c "CREATE ROLE insuralab LOGIN PASSWORD 'insuralab';" \
+#       -c "CREATE DATABASE insuralab OWNER insuralab;" \
+#       -c "CREATE DATABASE insuralab_testing OWNER insuralab;"
+#
+# SELF-CONTAINED SETUP (portable, no pre-existing container):
+#   Start a dedicated PostgreSQL for InsuraLab on host port 5434:
+#     docker compose --profile full up -d
+#   Then set backend/.env: DB_PORT=5434
+#
+# This project deliberately does NOT run MySQL, MongoDB, Elasticsearch, Kafka,
+# RabbitMQ, Kubernetes, or Redis. See docs/ARCHITECTURE.md §7.
+
+services:
+  postgres:
+    image: postgres:18
+    profiles: ["full"]
+    container_name: insuralab-postgres
+    environment:
+      POSTGRES_USER: insuralab
+      POSTGRES_PASSWORD: insuralab
+      POSTGRES_DB: insuralab
+    ports:
+      - "5434:5432"
+    volumes:
+      - insuralab_pgdata_v18:/var/lib/postgresql
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U insuralab -d insuralab"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  # PostgreSQL 18 stores clusters in major-version-specific subdirectories.
+  # Keep the legacy volume untouched so this change never destroys local data.
+  insuralab_pgdata_v18:

@@ -1,0 +1,32 @@
+{
+  "name": "insuralab",
+  "private": true,
+  "version": "0.0.0",
+  "description": "InsuraLab — independent, provider-agnostic insurance education platform (monorepo root).",
+  "scripts": {
+    "install:all": "composer --working-dir=backend install && npm --prefix frontend install",
+    "setup": "npm run install:all && npm run backend:key && npm run migrate && npm run seed",
+    "backend:key": "php backend/artisan key:generate",
+    "start": "node scripts/dev.mjs",
+    "start:backend": "php backend/artisan serve --host=127.0.0.1 --port=8000",
+    "start:frontend": "npm --prefix frontend run dev",
+    "stop": "node scripts/stop.mjs",
+    "db:up": "docker compose --profile full up -d",
+    "db:down": "docker compose --profile full down",
+    "migrate": "php backend/artisan migrate",
+    "migrate:fresh": "php backend/artisan migrate:fresh",
+    "seed": "php backend/artisan db:seed",
+    "fresh": "php backend/artisan migrate:fresh --seed",
+    "test": "composer --working-dir=backend test",
+    "test:backend": "composer --working-dir=backend test",
+    "lint": "npm --prefix frontend run lint",
+    "lint:frontend": "npm --prefix frontend run lint",
+    "typecheck": "npm --prefix frontend run typecheck",
+    "format": "npm --prefix frontend run format && composer --working-dir=backend format",
+    "format:check": "npm --prefix frontend run format:check && composer --working-dir=backend format:check",
+    "build": "npm --prefix frontend run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

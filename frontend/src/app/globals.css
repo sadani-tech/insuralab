@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   InsuraLab design tokens
+   --------------------------------------------------------------------------
+   Calm, technical, editorial. Warm off-white reading surfaces; deep near-black
+   dark surfaces; indigo as the single interactive accent; cyan used sparingly.
+   Deliberately NOT Allianz corporate blue — the InsuraLab identity stands alone.
+   Dark mode follows the OS preference only (no in-app toggle yet); reading
+   quality comes first.
+   ========================================================================== */
+
+:root {
+  /* surfaces */
+  --color-background: #faf9f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1efea;
+  --color-border: #e5e1d8;
+  --color-border-strong: #d3cec1;
+
+  /* text */
+  --color-foreground: #1b1a18;
+  --color-muted-foreground: #6a665f;
+
+  /* interactive */
+  --color-primary: #3a44c9;
+  --color-primary-hover: #2f38ab;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #414a56;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #0e7490;
+  --color-ring: #3a44c9;
+
+  /* semantic — kept muted; never alarmist (see ReferenceStatusBadge) */
+  --color-success: #1f7a43;
+  --color-success-surface: #e6f2ea;
+  --color-warning: #9a5b16;
+  --color-warning-surface: #f6ecdd;
+  --color-info: #295c9c;
+  --color-info-surface: #e7eef7;
+  --color-danger: #a02929;
+  --color-danger-surface: #f6e5e4;
+
+  /* rhythm */
+  --radius: 0.625rem;
+  --radius-sm: 0.375rem;
+  --radius-lg: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-background: #0e0f13;
+    --color-surface: #16181f;
+    --color-surface-muted: #1d2029;
+    --color-border: #2a2e39;
+    --color-border-strong: #3a3f4d;
+
+    --color-foreground: #e9e8e5;
+    --color-muted-foreground: #9b9a94;
+
+    --color-primary: #8b90f4;
+    --color-primary-hover: #a0a4f7;
+    --color-primary-foreground: #10121a;
+    --color-secondary: #aeb6c2;
+    --color-secondary-foreground: #10121a;
+    --color-accent: #5ab7cf;
+    --color-ring: #8b90f4;
+
+    --color-success: #5fbd86;
+    --color-success-surface: #16281f;
+    --color-warning: #d69a5a;
+    --color-warning-surface: #2a2115;
+    --color-info: #7fa9dd;
+    --color-info-surface: #172232;
+    --color-danger: #e08d8d;
+    --color-danger-surface: #2a1a1a;
+  }
+}
+
+/* Explicit override support for a future toggle (both directions). */
+:root[data-theme="dark"] {
+  --color-background: #0e0f13;
+  --color-surface: #16181f;
+  --color-surface-muted: #1d2029;
+  --color-border: #2a2e39;
+  --color-border-strong: #3a3f4d;
+  --color-foreground: #e9e8e5;
+  --color-muted-foreground: #9b9a94;
+  --color-primary: #8b90f4;
+  --color-primary-hover: #a0a4f7;
+  --color-primary-foreground: #10121a;
+  --color-secondary: #aeb6c2;
+  --color-secondary-foreground: #10121a;
+  --color-accent: #5ab7cf;
+  --color-ring: #8b90f4;
+  --color-success: #5fbd86;
+  --color-success-surface: #16281f;
+  --color-warning: #d69a5a;
+  --color-warning-surface: #2a2115;
+  --color-info: #7fa9dd;
+  --color-info-surface: #172232;
+  --color-danger: #e08d8d;
+  --color-danger-surface: #2a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-accent: var(--color-accent);
+  --color-ring: var(--color-ring);
+  --color-success: var(--color-success);
+  --color-success-surface: var(--color-success-surface);
+  --color-warning: var(--color-warning);
+  --color-warning-surface: var(--color-warning-surface);
+  --color-info: var(--color-info);
+  --color-info-surface: var(--color-info-surface);
+  --color-danger: var(--color-danger);
+  --color-danger-surface: var(--color-danger-surface);
+
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-sm: var(--radius-sm);
+  --radius-DEFAULT: var(--radius);
+  --radius-lg: var(--radius-lg);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    overflow-x: clip;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.15;
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-primary) 22%, transparent);
+  }
+}
+
+/* Respect users who asked for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Comfortable reading measure for long-form educational text (Phase 5 fills in
+   the article renderer; the container is defined now). */
+.reading-measure {
+  max-width: 68ch;
+}

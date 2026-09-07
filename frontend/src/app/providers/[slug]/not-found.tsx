@@ -1,0 +1,15 @@
+import { Container } from "@/components/ui/container";
+import { ButtonLink } from "@/components/ui/button";
+
+export default function ProviderNotFound() {
+  return (
+    <Container className="flex flex-1 flex-col items-center justify-center gap-4 py-24 text-center">
+      <p className="text-accent font-mono text-xs font-semibold tracking-[0.14em] uppercase">404</p>
+      <h1 className="text-2xl font-semibold sm:text-3xl">Provider tidak ditemukan</h1>
+      <p className="text-muted-foreground max-w-md">Provider ini belum tersedia di InsuraLab.</p>
+      <ButtonLink href="/providers" className="mt-2">
+        Kembali ke Providers
+      </ButtonLink>
+    </Container>
+  );
+}
