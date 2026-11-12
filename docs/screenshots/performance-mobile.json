@@ -1,0 +1,16 @@
+{
+  "project": "mobile",
+  "viewport": {
+    "width": 390,
+    "height": 664
+  },
+  "nodes": 49,
+  "edges": 87,
+  "interactiveMs": 2327,
+  "graphSwitchReadyMs": 622,
+  "interactiveTargetMs": 3000,
+  "targetMet": true,
+  "browserFrameCadence": 60,
+  "canvas3dAvailable": true,
+  "note": "rAF cadence is a responsiveness indicator, not a GPU/renderer FPS benchmark. Physical mobile hardware was not profiled."
+}

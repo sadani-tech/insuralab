@@ -56,7 +56,7 @@ class ProductController extends Controller
                 'productCategory',
                 'protectionCategories',
                 'sources',
-                'glossaryTerms:id,term,slug,short_definition',
+                'glossaryTerms' => fn ($q) => $q->withPublicEvidence()->select('glossary_terms.id', 'term', 'slug', 'short_definition'),
                 'relatedArticles' => fn ($q) => $q->public()
                     ->with('category:id,name,slug', 'provider:id,name,slug,country_of_origin,last_reviewed_at')
                     ->orderBy('title'),

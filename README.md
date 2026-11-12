@@ -1,86 +1,35 @@
 # InsuraLab
+**Pengetahuan untuk perlindungan.** A source-aware insurance learning workspace with a knowledge map, curated answers, practical guides and a future private agent area.
 
-> **Understand insurance before you buy it.**
->
-> Asuransi tidak harus rumit. Pahami risiko, kenali proteksi, dan pelajari cara kerjanya sebelum mengambil keputusan.
+The November 2026 revamp keeps Laravel/Filament, Next.js, TypeScript and PostgreSQL in this repository. No AI key, embedding service or model quota is required to use the core experience.
 
-InsuraLab is an independent, **provider-agnostic** insurance education platform. It helps people understand financial risk and how insurance protection works — without pushing them toward a particular product.
+## Run locally
+1. Use the existing PostgreSQL at :5433, or the dedicated Docker Compose profile at :5434. Configure backend/.env and frontend/.env.local from the examples. Do not overwrite populated settings.
+2. Install dependencies with npm run install:all when needed.
+3. From backend, run php artisan migrate, then php artisan db:seed --class=KnowledgeSeeder. This adds the new library without wiping or reseeding the existing database.
+4. Run npm start from the repository root. Open http://localhost:3000 . CMS: http://localhost:8000/admin .
 
-> _We don't tell people what to buy. We help people understand what they are protecting._
+The optional standalone database command is docker compose --profile full up -d. Its port differs from the default; confirm configuration before using it.
 
-Allianz is the **first provider case study**, never the identity of the platform.
+## Product
+- / — canonical explorer with Neural View (particle cortex), Graph View (3D network), accessible list, curated question search and source-backed reading connections.
+- /panduan — stored guides with page-session checklists.
+- /tanya — editorial FAQ and keyword search. Optional AI is unavailable until a real adapter is configured.
+- /sumber — evidence passages with source/version context.
+- /agent — feature-availability notice. No customer records or active CRM.
+- Existing Learn/Glossary routes remain. Source-dependent records are withheld if publication rights are unknown/restricted.
 
----
+## Editorial workflow
+Source rights and review status are separate. Use the CMS to manage concepts, source rights, passages, relations and FAQ/guides. For changed cited text create a new passage key/version. Restricted source files remain outside public assets/Git.
 
-## Status
+The reference corpus at E:\\Kerja\\Insurance was inventoried and sampled, not bulk-ingested. New first-party material explicitly awaits independent expert review. See docs/CONTENT_COVERAGE.md.
 
-Foundation execution — **Phases 0–2 complete**. No public site, public API, assessment engine, or 3D visualization yet (see `docs/ROADMAP.md`). The frontend is a minimal development shell.
+## Verification
+Frontend: npm run lint, npm run typecheck, npm test, npm run build.
+Backend: php artisan test and php vendor/bin/pint --test from backend.
+Browser: with both apps running, npm run test:e2e from frontend. Windows defaults to installed Edge; other hosts use Playwright Chromium. Override PLAYWRIGHT_CHANNEL if necessary. Synthetic test inputs only.
 
-## Repository layout
+Tests use insuralab_testing, never the development database. Database resets are for a verified isolated test database only.
 
-| Path | What |
-|---|---|
-| `frontend/` | Next.js 16 (App Router, TypeScript strict, Tailwind v4) — the public web experience. Dev shell only for now. |
-| `backend/` | Laravel 10 + Filament 3 — domain logic, the CMS at `/admin`, and (later) the REST API. |
-| `docs/` | Project memory: vision, architecture, domain knowledge, content guide, roadmap, implementation plan. |
-| `docs/decisions/` | Architecture Decision Records. |
-| `docker-compose.yml` | Local PostgreSQL (self-contained option). |
-| `Makefile` / root `package.json` | Developer commands (use `npm run …` on Windows). |
-| `CLAUDE.md` | Project constitution — **read first**. |
-
-## Prerequisites
-
-- **PHP 8.1+** with `intl`, `gd`, `pdo_pgsql` extensions, and **Composer 2**
-- **Node.js 20+** and npm
-- **Docker** (for PostgreSQL) — or any reachable PostgreSQL 15+
-- See `docs/decisions/0005-laravel-10-php-81-pin.md` for the PHP-version trade-off.
-
-## Quick start
-
-```bash
-# 1. Database — EITHER reuse an existing local PostgreSQL container on :5433
-#    (create role `insuralab` / db `insuralab` + `insuralab_testing`),
-#    OR start the self-contained one on :5434:
-docker compose --profile full up -d          # then set backend/.env DB_PORT=5434
-
-# 2. Backend
-cd backend
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed                    # schema + seed content + admin user
-php artisan serve                            # http://127.0.0.1:8000  (admin: /admin)
-
-# 3. Frontend (new terminal)
-cd frontend
-cp .env.example .env.local
-npm install
-npm run dev                                  # http://localhost:3000
-```
-
-Or from the repo root: `npm run install:all` then `npm run fresh` then `npm start`.
-
-**Default admin login** (from `backend/.env`): `admin@insuralab.test` / `password`.
-
-## Common commands (root)
-
-| Command | Does |
-|---|---|
-| `npm run install:all` | Install backend + frontend deps |
-| `npm start` | Run API (:8000) + web (:3000) together |
-| `npm run stop` | Stop dev servers on :3000 / :8000 |
-| `npm run migrate` / `npm run seed` / `npm run fresh` | Database |
-| `npm test` | Backend test suite (Pest) |
-| `npm run lint` | Lint the frontend |
-| `npm run format` / `npm run format:check` | Pint + Prettier |
-| `npm run build` | Production build of the frontend |
-
-Equivalent `make` targets exist for Unix/CI (`make help`).
-
-## Documentation
-
-Start with **`CLAUDE.md`**, then `docs/PRODUCT_VISION.md`, `docs/ARCHITECTURE.md`, `docs/DOMAIN_KNOWLEDGE.md`, `docs/CONTENT_GUIDE.md`, `docs/ROADMAP.md`, and `docs/decisions/`.
-
-## License
-
-Not yet licensed. All rights reserved by the author pending a license decision.
+## Current documentation
+Start with docs/REVAMP_PLAN.md, docs/ARCHITECTURE.md, docs/CONTENT_COVERAGE.md, docs/AGENT_OPERATIONS_BLUEPRINT.md and docs/QA_REPORT.md. Original documentation stays in docs/old-docs as history. No push or deployment is part of this local revamp.

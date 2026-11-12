@@ -46,7 +46,7 @@ class ProviderResource extends JsonResource
                 'articles' => (int) ($this->articles_count ?? 0),
             ],
             'articles' => ArticleSummaryResource::collection($this->whenLoaded('articles')),
-            'sources' => SourceResource::collection($this->whenLoaded('sources')),
+            'sources' => SourceResource::collection($this->whenLoaded('sources', fn () => $this->sources->where('access_level', 'public')->values())),
             'created_at' => optional($this->created_at)->toIso8601String(),
             'updated_at' => optional($this->updated_at)->toIso8601String(),
         ];

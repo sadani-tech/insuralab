@@ -26,6 +26,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->name('api.v1.')->group(function () {
+    Route::get('knowledge', [\App\Http\Controllers\Api\V1\KnowledgeController::class, 'index'])->name('knowledge.index');
+    Route::post('knowledge/assist', [\App\Http\Controllers\Api\V1\KnowledgeController::class, 'assist'])->middleware('throttle:12,1')->name('knowledge.assist');
+    // Operational data stays unavailable until membership and per-record policies exist.
+    Route::middleware('auth:sanctum')->get('agent/workspace', fn () => abort(403, 'Workspace agen belum diaktifkan.'))->name('agent.workspace');
     Route::get('health', HealthController::class)->name('health');
 
     Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');

@@ -35,22 +35,18 @@ it('serves the real seeded dataset over the API without N+1 explosions', functio
     expect($queryCount)->toBeLessThan(10);
 });
 
-it('exposes provider trust metadata on the seeded provider-specific article', function () {
+it('keeps training-derived provider content private until source rights are approved', function () {
     $this->seed(DatabaseSeeder::class);
 
     $this->getJson('/api/v1/articles/bagaimana-allianz-flexi-ci-dijelaskan-dalam-materi-pelatihan')
-        ->assertOk()
-        ->assertJsonPath('data.knowledge_type', 'provider_specific')
-        ->assertJsonPath('data.trust.reference_status', 'needs_review')
-        ->assertJsonPath('data.provider.slug', 'allianz')
-        ->assertJsonPath('data.sources.0.title', 'Allianz Basic Training – Dokumentasi Terstruktur');
+        ->assertNotFound();
 });
 
-it('keeps the seeded historical product reachable and badged', function () {
+it('requires public source rights even for historical product records', function () {
     $this->seed(DatabaseSeeder::class);
 
     $response = $this->getJson('/api/v1/products?reference_status=historical')->assertOk();
 
     expect(collect($response->json('data'))->pluck('reference_status')->unique()->all())
-        ->toBe(['historical']);
+        ->toBe([]);
 });

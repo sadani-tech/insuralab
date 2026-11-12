@@ -37,7 +37,7 @@ class Provider extends Model
      */
     public function scopePublic(Builder $query): Builder
     {
-        return $query->where('status', ProviderStatus::Active->value);
+        return $query->withPublicEvidence()->where('status', ProviderStatus::Active->value);
     }
 
     public function products(): HasMany

@@ -48,7 +48,7 @@ class ArticleController extends Controller
                 'category:id,name,slug',
                 'provider:id,name,slug,country_of_origin,last_reviewed_at',
                 'tags:id,name,slug',
-                'glossaryTerms:id,term,slug,short_definition',
+                'glossaryTerms' => fn ($q) => $q->withPublicEvidence()->select('glossary_terms.id', 'term', 'slug', 'short_definition'),
                 'sources',
             ])
             ->where('slug', $slug)

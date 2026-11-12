@@ -23,7 +23,7 @@ class SourceResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'publisher' => $this->publisher,
-            'url' => $this->url,
+            'url' => $this->url && preg_match('#^https?://#i', $this->url) ? $this->url : null,
             'published_at' => optional($this->published_at)->toDateString(),
             'accessed_at' => optional($this->accessed_at)->toDateString(),
             'reference_period' => $this->reference_period,

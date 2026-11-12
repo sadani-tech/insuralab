@@ -39,7 +39,7 @@ class Product extends Model
 
     public function scopePublished(Builder $query): Builder
     {
-        return $query->where('status', ContentStatus::Published->value);
+        return $query->withPublicEvidence()->where('status', ContentStatus::Published->value);
     }
 
     /**
@@ -49,7 +49,7 @@ class Product extends Model
      */
     public function scopePublic(Builder $query): Builder
     {
-        return $query->where('status', ContentStatus::Published->value);
+        return $query->published();
     }
 
     public function provider(): BelongsTo

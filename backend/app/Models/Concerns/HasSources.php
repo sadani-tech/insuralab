@@ -11,6 +11,12 @@ use Illuminate\Database\Eloquent\Relations\MorphToMany;
  */
 trait HasSources
 {
+    /** Revoking a source hides dependent public content, not merely its citation. */
+    public function scopeWithPublicEvidence(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+    {
+        return $query->whereDoesntHave('sources', fn ($q) => $q->where('access_level', '!=', 'public'));
+    }
+
     public function sources(): MorphToMany
     {
         return $this->morphToMany(Source::class, 'sourceable')

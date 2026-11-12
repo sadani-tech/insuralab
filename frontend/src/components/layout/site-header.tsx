@@ -8,7 +8,7 @@ import { MAIN_NAV, SECONDARY_NAV } from "@/lib/navigation";
 import { Brand } from "./brand";
 
 function isActive(pathname: string, href: string): boolean {
-  return pathname === href || pathname.startsWith(`${href}/`);
+  return pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
 }
 
 export function SiteHeader() {
@@ -38,8 +38,8 @@ export function SiteHeader() {
   }, [open]);
 
   return (
-    <header className="border-border bg-background/85 sticky top-0 z-40 border-b backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3.5 sm:px-8">
+    <header className="revamp-header">
+      <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4 px-5 py-3.5 sm:px-8">
         <Brand />
 
         <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">

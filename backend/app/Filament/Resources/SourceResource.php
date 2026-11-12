@@ -24,6 +24,10 @@ class SourceResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\Select::make('access_level')
+                    ->options(['unreviewed' => 'Belum ditinjau', 'public' => 'Publik (diizinkan)', 'restricted' => 'Internal / terbatas', 'personal' => 'Data pribadi'])
+                    ->default('unreviewed')->required()
+                    ->helperText('Izin akses terpisah dari keakuratan informasi. Publikasi memerlukan pemeriksaan hak penggunaan.'),
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),

@@ -55,7 +55,7 @@ class ArticleResource extends JsonResource
                 'reference_period' => $this->reference_period,
                 'last_reviewed_at' => optional($this->last_reviewed_at)->toDateString(),
             ],
-            'sources' => SourceResource::collection($this->whenLoaded('sources')),
+            'sources' => SourceResource::collection($this->whenLoaded('sources', fn () => $this->sources->where('access_level', 'public')->values())),
 
             'published_at' => optional($this->published_at)->toIso8601String(),
             'created_at' => optional($this->created_at)->toIso8601String(),

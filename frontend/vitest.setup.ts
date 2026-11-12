@@ -12,7 +12,7 @@ afterEach(() => {
 });
 
 // jsdom lacks these browser APIs that `motion` and media-query hooks rely on.
-if (!("matchMedia" in window)) {
+if (typeof window.matchMedia !== "function") {
   Object.defineProperty(window, "matchMedia", {
     writable: true,
     value: (query: string) => ({

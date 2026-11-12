@@ -24,6 +24,9 @@ class GlossaryTermResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\Toggle::make('explorer_published')->label('Tampil di explorer')->default(false),
+                Forms\Components\Select::make('metadata.explorer_group')->options(['dasar' => 'Dasar perlindungan', 'polis' => 'Mengenal polis', 'proteksi' => 'Jenis proteksi', 'klaim' => 'Klaim dan layanan', 'proses' => 'Proses', 'syariah' => 'Syariah']),
+                Forms\Components\Textarea::make('metadata.explorer_summary')->label('Penjelasan pengantar explorer')->columnSpanFull(),
                 Forms\Components\TextInput::make('term')
                     ->required()->maxLength(255)
                     ->live(onBlur: true)

@@ -38,7 +38,7 @@ class GlossaryTermResource extends JsonResource
                 'short_definition' => $t->short_definition,
             ])->values()),
             'related_articles' => ArticleSummaryResource::collection($this->whenLoaded('articles')),
-            'sources' => SourceResource::collection($this->whenLoaded('sources')),
+            'sources' => SourceResource::collection($this->whenLoaded('sources', fn () => $this->sources->where('access_level', 'public')->values())),
         ];
     }
 }

@@ -13,7 +13,7 @@ class GlossaryTermController extends Controller
 {
     public function index(GlossaryIndexRequest $request): AnonymousResourceCollection
     {
-        $terms = GlossaryTerm::query()
+        $terms = GlossaryTerm::query()->withPublicEvidence()
             ->withCount(['articles as articles_count' => fn ($q) => $q->public()])
             ->when($request->filled('letter'), fn ($q) => $q->where('term', 'ilike', $request->string('letter').'%'))
             ->when($request->filled('category'), fn ($q) => $q->where('category', $request->string('category')))
@@ -33,10 +33,10 @@ class GlossaryTermController extends Controller
 
     public function show(string $slug): GlossaryTermResource
     {
-        $term = GlossaryTerm::query()
+        $term = GlossaryTerm::query()->withPublicEvidence()
             ->with([
                 'provider:id,name,slug,country_of_origin,last_reviewed_at',
-                'relatedTerms:id,term,slug,short_definition',
+                'relatedTerms' => fn ($q) => $q->withPublicEvidence()->select('glossary_terms.id', 'term', 'slug', 'short_definition'),
                 'articles' => fn ($q) => $q->public()
                     ->with('category:id,name,slug', 'provider:id,name,slug,country_of_origin,last_reviewed_at')
                     ->orderByDesc('is_featured')

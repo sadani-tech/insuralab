@@ -20,11 +20,12 @@ class GlossaryTerm extends Model
 
     protected $fillable = [
         'provider_id', 'term', 'slug', 'short_definition', 'definition',
-        'category', 'metadata', 'last_reviewed_at', 'reference_status',
+        'category', 'metadata', 'last_reviewed_at', 'reference_status', 'explorer_published',
     ];
 
     protected $casts = [
         'metadata' => 'array',
+        'explorer_published' => 'boolean',
         'last_reviewed_at' => 'date',
         'reference_status' => ReferenceStatus::class,
     ];

@@ -1,0 +1,1406 @@
+{
+  "nodes": [
+    {
+      "slug": "risiko",
+      "title": "Risiko",
+      "summary": "Kemungkinan suatu peristiwa menimbulkan kerugian. Bedakan peristiwanya dari dampak keuangannya.",
+      "group": "dasar"
+    },
+    {
+      "slug": "asuransi",
+      "title": "Asuransi",
+      "summary": "Perjanjian perlindungan atas risiko tertentu dengan syarat, kewajiban, dan manfaat yang tertulis dalam polis.",
+      "group": "dasar"
+    },
+    {
+      "slug": "risk-transfer",
+      "title": "Pengalihan risiko",
+      "summary": "Pada asuransi konvensional, risiko yang disepakati dialihkan kepada penanggung sesuai kontrak.",
+      "group": "dasar"
+    },
+    {
+      "slug": "premi",
+      "title": "Premi",
+      "summary": "Pembayaran untuk pertanggungan sesuai jadwal dan ketentuan polis. Premi tidak otomatis sama dengan tabungan.",
+      "group": "dasar"
+    },
+    {
+      "slug": "manfaat",
+      "title": "Manfaat",
+      "summary": "Pembayaran atau layanan yang diberikan apabila syarat pertanggungan terpenuhi.",
+      "group": "dasar"
+    },
+    {
+      "slug": "uang-pertanggungan",
+      "title": "Uang pertanggungan",
+      "summary": "Nilai pertanggungan yang tercantum pada polis. Pembayaran tetap mengikuti peristiwa dan ketentuan manfaat.",
+      "group": "dasar"
+    },
+    {
+      "slug": "indemnity",
+      "title": "Indemnitas",
+      "summary": "Prinsip penggantian kerugian yang menjadi dasar sebagian manfaat penggantian biaya; batas dan syaratnya mengikuti polis.",
+      "group": "dasar"
+    },
+    {
+      "slug": "dana-darurat",
+      "title": "Dana darurat",
+      "summary": "Dana yang dapat diakses untuk kebutuhan tak terduga. Fungsinya berbeda dari kontrak pertanggungan asuransi.",
+      "group": "dasar"
+    },
+    {
+      "slug": "polis",
+      "title": "Polis",
+      "summary": "Dokumen kontrak yang memuat pihak, hak, kewajiban, pertanggungan, serta ketentuan asuransi.",
+      "group": "polis"
+    },
+    {
+      "slug": "pemegang-polis",
+      "title": "Pemegang polis",
+      "summary": "Pihak yang memiliki kontrak dan menjalankan hak serta kewajiban yang ditetapkan di dalamnya.",
+      "group": "polis"
+    },
+    {
+      "slug": "tertanggung",
+      "title": "Tertanggung",
+      "summary": "Orang yang risikonya dipertanggungkan. Dapat berbeda dari pemegang polis.",
+      "group": "polis"
+    },
+    {
+      "slug": "penerima-manfaat",
+      "title": "Penerima manfaat",
+      "summary": "Pihak yang ditunjuk atau berhak menerima manfaat sesuai ketentuan polis.",
+      "group": "polis"
+    },
+    {
+      "slug": "pengecualian",
+      "title": "Pengecualian",
+      "summary": "Peristiwa atau kondisi yang dinyatakan tidak dijamin. Baca bersama definisi manfaat.",
+      "group": "polis"
+    },
+    {
+      "slug": "masa-tunggu",
+      "title": "Masa tunggu",
+      "summary": "Periode ketika manfaat tertentu belum berlaku menurut ketentuan polis. Tidak sama pada semua manfaat.",
+      "group": "polis"
+    },
+    {
+      "slug": "free-look",
+      "title": "Masa mempelajari polis",
+      "summary": "Kesempatan mempelajari dan menanggapi polis sesuai jangka waktu serta prosedur dalam dokumen produk.",
+      "group": "polis"
+    },
+    {
+      "slug": "riplay",
+      "title": "RIPLAY",
+      "summary": "Ringkasan Informasi Produk dan Layanan. Membantu mengenali produk, tetapi tidak menggantikan ketentuan lengkap polis.",
+      "group": "polis"
+    },
+    {
+      "slug": "lapse",
+      "title": "Lapse",
+      "summary": "Keadaan polis tidak berlaku karena kondisi yang ditetapkan kontrak, misalnya kewajiban pembayaran yang tidak terpenuhi.",
+      "group": "polis"
+    },
+    {
+      "slug": "asuransi-jiwa",
+      "title": "Proteksi jiwa",
+      "summary": "Kategori perlindungan yang membahas dampak finansial meninggal dunia, dengan manfaat sesuai kontrak.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "asuransi-kesehatan",
+      "title": "Proteksi kesehatan",
+      "summary": "Perlindungan terkait biaya atau peristiwa kesehatan yang dijamin. Cara pembayaran dan batas manfaat berbeda antarpolis.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "penyakit-kritis",
+      "title": "Penyakit kritis",
+      "summary": "Kategori manfaat untuk kondisi yang memenuhi definisi penyakit kritis dalam polis; diagnosis saja belum menjelaskan seluruh syarat klaim.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "tpd",
+      "title": "Disabilitas tetap",
+      "summary": "Kategori manfaat dengan definisi disabilitas tetap yang ditentukan polis. Periksa kriteria dan bukti yang diminta.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "addb",
+      "title": "Proteksi kecelakaan",
+      "summary": "Kategori manfaat terkait kecelakaan sesuai definisi, peristiwa, dan tabel manfaat dalam polis.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "rider",
+      "title": "Manfaat tambahan",
+      "summary": "Pertanggungan tambahan yang dilekatkan pada polis dasar yang sesuai. Periksa ketergantungan dan biaya masing-masing.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "polis-dasar",
+      "title": "Polis dasar",
+      "summary": "Kontrak utama yang menjadi tempat melekatnya manfaat tambahan atau rider.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "human-life-value",
+      "title": "Kebutuhan pengganti penghasilan",
+      "summary": "Topik untuk memahami dampak hilangnya penghasilan terhadap tanggungan; bukan penilaian harga nyawa atau rekomendasi nominal otomatis.",
+      "group": "proteksi"
+    },
+    {
+      "slug": "klaim",
+      "title": "Klaim",
+      "summary": "Permintaan manfaat kepada penanggung atau pengelola setelah terjadi peristiwa yang dianggap memenuhi pertanggungan.",
+      "group": "klaim"
+    },
+    {
+      "slug": "cashless",
+      "title": "Cashless",
+      "summary": "Fasilitas penyelesaian tagihan melalui jaringan dan prosedur yang disepakati. Tidak berarti seluruh biaya pasti dijamin.",
+      "group": "klaim"
+    },
+    {
+      "slug": "reimbursement",
+      "title": "Reimbursement",
+      "summary": "Mekanisme mengajukan penggantian biaya yang telah dibayar, dengan bukti dan syarat sesuai polis.",
+      "group": "klaim"
+    },
+    {
+      "slug": "lump-sum",
+      "title": "Santunan sekaligus",
+      "summary": "Bentuk pembayaran manfaat sekaligus berdasarkan ketentuan, berbeda dari penggantian setiap bukti biaya.",
+      "group": "klaim"
+    },
+    {
+      "slug": "deductible",
+      "title": "Risiko sendiri",
+      "summary": "Bagian biaya yang menjadi tanggungan pemegang polis atau tertanggung menurut ketentuan manfaat.",
+      "group": "klaim"
+    },
+    {
+      "slug": "co-share",
+      "title": "Pembagian biaya",
+      "summary": "Mekanisme membagi biaya yang memenuhi syarat antara nasabah dan penanggung sesuai perhitungan dalam kontrak.",
+      "group": "klaim"
+    },
+    {
+      "slug": "survival-period",
+      "title": "Survival period",
+      "summary": "Syarat masa bertahan hidup setelah peristiwa tertentu bila memang diatur pada manfaat terkait.",
+      "group": "klaim"
+    },
+    {
+      "slug": "underwriting",
+      "title": "Underwriting",
+      "summary": "Penilaian risiko oleh perusahaan sebelum menetapkan keputusan pertanggungan. Agen membantu informasi, bukan menetapkan keputusan.",
+      "group": "proses"
+    },
+    {
+      "slug": "field-underwriting",
+      "title": "Pencatatan awal risiko",
+      "summary": "Peran pendamping dalam membantu memperoleh dan meneruskan informasi yang akurat untuk proses pengajuan.",
+      "group": "proses"
+    },
+    {
+      "slug": "medical-underwriting",
+      "title": "Penilaian kesehatan",
+      "summary": "Bagian proses underwriting yang menilai informasi kesehatan sesuai kebutuhan perusahaan.",
+      "group": "proses"
+    },
+    {
+      "slug": "financial-underwriting",
+      "title": "Penilaian finansial",
+      "summary": "Bagian proses underwriting yang menilai kewajaran pertanggungan berdasarkan informasi finansial.",
+      "group": "proses"
+    },
+    {
+      "slug": "spaj",
+      "title": "Pengajuan asuransi",
+      "summary": "Dokumen permintaan pertanggungan yang harus diisi lengkap, benar, dan konsisten. Pengajuan belum sama dengan penerimaan.",
+      "group": "proses"
+    },
+    {
+      "slug": "inforce",
+      "title": "Polis aktif",
+      "summary": "Status pertanggungan yang telah memenuhi ketentuan berlakunya polis. Periksa tanggal efektif dan kondisi manfaat.",
+      "group": "proses"
+    },
+    {
+      "slug": "agen",
+      "title": "Pendampingan agen",
+      "summary": "Bantuan untuk memahami informasi, menyiapkan pengajuan, serta menelusuri layanan. Keputusan underwriting dan klaim tetap pada perusahaan.",
+      "group": "proses"
+    },
+    {
+      "slug": "asuransi-syariah",
+      "title": "Asuransi syariah",
+      "summary": "Perlindungan berbasis prinsip saling menolong antarpeserta melalui pengelolaan dana dan akad yang dijelaskan pada dokumen produk.",
+      "group": "syariah"
+    },
+    {
+      "slug": "tabarru",
+      "title": "Tabarru’",
+      "summary": "Dana kebajikan peserta yang digunakan untuk saling menolong sesuai ketentuan pengelolaan dalam akad.",
+      "group": "syariah"
+    },
+    {
+      "slug": "taawun",
+      "title": "Ta’awun",
+      "summary": "Prinsip saling menolong yang mendasari hubungan antarpeserta dalam perlindungan syariah.",
+      "group": "syariah"
+    },
+    {
+      "slug": "ujrah",
+      "title": "Ujrah",
+      "summary": "Imbalan pengelolaan yang ditetapkan sesuai akad. Periksa dasar, nilai, dan waktu pembebanannya pada dokumen.",
+      "group": "syariah"
+    },
+    {
+      "slug": "risk-sharing",
+      "title": "Berbagi risiko",
+      "summary": "Pendekatan saling menanggung risiko antarpeserta sesuai ketentuan dana dan akad, dengan perusahaan sebagai pengelola.",
+      "group": "syariah"
+    },
+    {
+      "slug": "wakalah-bil-ujrah",
+      "title": "Wakalah bil ujrah",
+      "summary": "Akad pemberian kuasa pengelolaan dengan imbalan ujrah sesuai ketentuan yang disepakati.",
+      "group": "syariah"
+    }
+  ],
+  "edges": [
+    {
+      "source": "risiko",
+      "target": "asuransi",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca asuransi dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "risk-transfer",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pengalihan risiko dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "premi",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca premi dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "manfaat",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca manfaat dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "uang-pertanggungan",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca uang pertanggungan dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "indemnity",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca indemnitas dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "risiko",
+      "target": "dana-darurat",
+      "passage": "editorial-dasar",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca dana darurat dalam kelompok dasar perlindungan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi",
+      "target": "risk-transfer",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi",
+      "target": "premi",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi",
+      "target": "manfaat",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi",
+      "target": "uang-pertanggungan",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi",
+      "target": "indemnity",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi",
+      "target": "dana-darurat",
+      "passage": "editorial-dasar",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan dasar perlindungan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "polis",
+      "target": "pemegang-polis",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pemegang polis dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "tertanggung",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca tertanggung dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "penerima-manfaat",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca penerima manfaat dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "pengecualian",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pengecualian dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "masa-tunggu",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca masa tunggu dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "free-look",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca masa mempelajari polis dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "riplay",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca riplay dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "polis",
+      "target": "lapse",
+      "passage": "editorial-polis",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca lapse dalam kelompok mengenal polis untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "tertanggung",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "penerima-manfaat",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "pengecualian",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "masa-tunggu",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "free-look",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "riplay",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "pemegang-polis",
+      "target": "lapse",
+      "passage": "editorial-polis",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan mengenal polis menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "asuransi-kesehatan",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca proteksi kesehatan dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "penyakit-kritis",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca penyakit kritis dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "tpd",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca disabilitas tetap dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "addb",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca proteksi kecelakaan dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "rider",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca manfaat tambahan dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "polis-dasar",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca polis dasar dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "human-life-value",
+      "passage": "editorial-proteksi",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca kebutuhan pengganti penghasilan dalam kelompok jenis proteksi untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "penyakit-kritis",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "tpd",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "addb",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "rider",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "polis-dasar",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-kesehatan",
+      "target": "human-life-value",
+      "passage": "editorial-proteksi",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan jenis proteksi menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "klaim",
+      "target": "cashless",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca cashless dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "klaim",
+      "target": "reimbursement",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca reimbursement dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "klaim",
+      "target": "lump-sum",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca santunan sekaligus dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "klaim",
+      "target": "deductible",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca risiko sendiri dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "klaim",
+      "target": "co-share",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pembagian biaya dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "klaim",
+      "target": "survival-period",
+      "passage": "editorial-klaim",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca survival period dalam kelompok klaim & layanan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "cashless",
+      "target": "reimbursement",
+      "passage": "editorial-klaim",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan klaim & layanan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "cashless",
+      "target": "lump-sum",
+      "passage": "editorial-klaim",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan klaim & layanan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "cashless",
+      "target": "deductible",
+      "passage": "editorial-klaim",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan klaim & layanan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "cashless",
+      "target": "co-share",
+      "passage": "editorial-klaim",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan klaim & layanan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "cashless",
+      "target": "survival-period",
+      "passage": "editorial-klaim",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan klaim & layanan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "underwriting",
+      "target": "field-underwriting",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pencatatan awal risiko dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "underwriting",
+      "target": "medical-underwriting",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca penilaian kesehatan dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "underwriting",
+      "target": "financial-underwriting",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca penilaian finansial dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "underwriting",
+      "target": "spaj",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pengajuan asuransi dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "underwriting",
+      "target": "inforce",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca polis aktif dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "underwriting",
+      "target": "agen",
+      "passage": "editorial-proses",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca pendampingan agen dalam kelompok proses & pendampingan untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "field-underwriting",
+      "target": "medical-underwriting",
+      "passage": "editorial-proses",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan proses & pendampingan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "field-underwriting",
+      "target": "financial-underwriting",
+      "passage": "editorial-proses",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan proses & pendampingan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "field-underwriting",
+      "target": "spaj",
+      "passage": "editorial-proses",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan proses & pendampingan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "field-underwriting",
+      "target": "inforce",
+      "passage": "editorial-proses",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan proses & pendampingan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "field-underwriting",
+      "target": "agen",
+      "passage": "editorial-proses",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan proses & pendampingan menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "asuransi-syariah",
+      "target": "tabarru",
+      "passage": "editorial-syariah",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca tabarru’ dalam kelompok prinsip syariah untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-syariah",
+      "target": "taawun",
+      "passage": "editorial-syariah",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca ta’awun dalam kelompok prinsip syariah untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-syariah",
+      "target": "ujrah",
+      "passage": "editorial-syariah",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca ujrah dalam kelompok prinsip syariah untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-syariah",
+      "target": "risk-sharing",
+      "passage": "editorial-syariah",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca berbagi risiko dalam kelompok prinsip syariah untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "asuransi-syariah",
+      "target": "wakalah-bil-ujrah",
+      "passage": "editorial-syariah",
+      "label": "Konteks pembelajaran",
+      "explanation": "Baca wakalah bil ujrah dalam kelompok prinsip syariah untuk memahami istilah beserta perannya. Hubungan ini adalah panduan membaca, bukan jaminan manfaat."
+    },
+    {
+      "source": "tabarru",
+      "target": "taawun",
+      "passage": "editorial-syariah",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan prinsip syariah menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "tabarru",
+      "target": "ujrah",
+      "passage": "editorial-syariah",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan prinsip syariah menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "tabarru",
+      "target": "risk-sharing",
+      "passage": "editorial-syariah",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan prinsip syariah menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "tabarru",
+      "target": "wakalah-bil-ujrah",
+      "passage": "editorial-syariah",
+      "label": "Pelajari bersama",
+      "explanation": "Catatan prinsip syariah menjelaskan kedua istilah agar peran dan batasannya dapat dibedakan. Buka rujukan untuk membaca definisi masing-masing."
+    },
+    {
+      "source": "premi",
+      "target": "polis",
+      "passage": "editorial-polis",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi polis sebagai konteks ketika mempelajari premi. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "manfaat",
+      "target": "klaim",
+      "passage": "editorial-klaim",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi klaim sebagai konteks ketika mempelajari manfaat. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "manfaat",
+      "target": "reimbursement",
+      "passage": "editorial-klaim",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi reimbursement sebagai konteks ketika mempelajari manfaat. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "manfaat",
+      "target": "lump-sum",
+      "passage": "editorial-klaim",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi santunan sekaligus sebagai konteks ketika mempelajari manfaat. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "polis",
+      "target": "underwriting",
+      "passage": "editorial-proses",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi underwriting sebagai konteks ketika mempelajari polis. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "polis",
+      "target": "inforce",
+      "passage": "editorial-proses",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi polis aktif sebagai konteks ketika mempelajari polis. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "rider",
+      "target": "polis",
+      "passage": "editorial-polis",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi polis sebagai konteks ketika mempelajari manfaat tambahan. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "cashless",
+      "target": "asuransi-kesehatan",
+      "passage": "editorial-proteksi",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi proteksi kesehatan sebagai konteks ketika mempelajari cashless. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "klaim",
+      "target": "pengecualian",
+      "passage": "editorial-polis",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi pengecualian sebagai konteks ketika mempelajari klaim. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "underwriting",
+      "target": "tertanggung",
+      "passage": "editorial-polis",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi tertanggung sebagai konteks ketika mempelajari underwriting. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "asuransi",
+      "target": "asuransi-syariah",
+      "passage": "editorial-syariah",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi asuransi syariah sebagai konteks ketika mempelajari asuransi. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "agen",
+      "target": "klaim",
+      "passage": "editorial-klaim",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi klaim sebagai konteks ketika mempelajari pendampingan agen. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    },
+    {
+      "source": "asuransi-jiwa",
+      "target": "penerima-manfaat",
+      "passage": "editorial-polis",
+      "label": "Bacaan terkait",
+      "explanation": "Gunakan definisi penerima manfaat sebagai konteks ketika mempelajari proteksi jiwa. Tautan editorial ini tidak menyatakan cakupan atau keputusan polis tertentu."
+    }
+  ],
+  "entries": [
+    {
+      "slug": "membaca-riplay",
+      "kind": "guide",
+      "title": "Membaca RIPLAY dengan lebih percaya diri",
+      "summary": "Kenali bagian penting dokumen sebelum masuk ke rincian polis.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Catat nama produk dan entitas penerbit; jangan hanya nama mereknya.",
+        "Baca manfaat bersama syarat, risiko, biaya, dan pengecualian.",
+        "Pisahkan ilustrasi dari janji kontraktual; tandai asumsi dan versinya.",
+        "Bandingkan dengan RIPLAY personal dan polis yang benar-benar diterima.",
+        "Tuliskan pertanyaan yang belum terjawab sebelum mengambil keputusan."
+      ],
+      "keywords": [
+        "polis",
+        "Membaca RIPLAY dengan lebih percaya diri"
+      ],
+      "terms": [
+        "polis",
+        "pemegang-polis",
+        "tertanggung",
+        "penerima-manfaat",
+        "pengecualian",
+        "masa-tunggu",
+        "free-look",
+        "riplay",
+        "lapse"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "mengenal-pihak-polis",
+      "kind": "guide",
+      "title": "Siapa melakukan apa dalam polis?",
+      "summary": "Bedakan pemegang polis, tertanggung, penerima manfaat, dan perusahaan.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Temukan nama pemegang polis dan tertanggung.",
+        "Periksa penerima manfaat beserta prosedur pembaruannya.",
+        "Catat perusahaan yang menerbitkan kontrak.",
+        "Baca hak, kewajiban, dan saluran layanan masing-masing pihak.",
+        "Konfirmasikan perbedaan identitas atau istilah sebelum mengajukan perubahan."
+      ],
+      "keywords": [
+        "polis",
+        "Siapa melakukan apa dalam polis?"
+      ],
+      "terms": [
+        "polis",
+        "pemegang-polis",
+        "tertanggung",
+        "penerima-manfaat",
+        "pengecualian",
+        "masa-tunggu",
+        "free-look",
+        "riplay",
+        "lapse"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "manfaat-dan-batasan",
+      "kind": "guide",
+      "title": "Baca manfaat bersama batasannya",
+      "summary": "Gunakan satu catatan agar gambaran perlindungan tidak terpotong.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Tulis peristiwa yang dijamin dan definisinya.",
+        "Catat bentuk pembayaran serta batas per manfaat bila ada.",
+        "Periksa masa tunggu, pengecualian, risiko sendiri, dan pembagian biaya.",
+        "Tandai manfaat dasar dan tambahan serta ketergantungannya.",
+        "Gunakan ketentuan polis untuk memastikan informasi yang belum jelas."
+      ],
+      "keywords": [
+        "proteksi",
+        "Baca manfaat bersama batasannya"
+      ],
+      "terms": [
+        "asuransi-jiwa",
+        "asuransi-kesehatan",
+        "penyakit-kritis",
+        "tpd",
+        "addb",
+        "rider",
+        "polis-dasar",
+        "human-life-value"
+      ],
+      "passage": "editorial-proteksi"
+    },
+    {
+      "slug": "persiapan-konsultasi",
+      "kind": "guide",
+      "title": "Siapkan percakapan tentang proteksi",
+      "summary": "Bawa pertanyaan yang membantu memahami pilihan tanpa terburu-buru.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Tuliskan risiko keuangan yang ingin dipahami.",
+        "Catat perlindungan yang sudah ada, termasuk fasilitas kerja atau BPJS.",
+        "Tentukan batas kemampuan pembayaran secara pribadi; tidak perlu memasukkan data sensitif di sini.",
+        "Minta penjelasan manfaat, biaya, risiko, dan kewajiban secara berimbang.",
+        "Simpan rujukan dan waktu untuk membaca sebelum mengambil keputusan."
+      ],
+      "keywords": [
+        "dasar",
+        "Siapkan percakapan tentang proteksi"
+      ],
+      "terms": [
+        "risiko",
+        "asuransi",
+        "risk-transfer",
+        "premi",
+        "manfaat",
+        "uang-pertanggungan",
+        "indemnity",
+        "dana-darurat"
+      ],
+      "passage": "editorial-dasar"
+    },
+    {
+      "slug": "menelusuri-klaim",
+      "kind": "guide",
+      "title": "Menelusuri prosedur klaim",
+      "summary": "Checklist membaca prosedur, bukan jaminan bahwa klaim akan disetujui.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Buka ketentuan klaim pada versi polis yang berlaku.",
+        "Temukan saluran pelaporan, dokumen, dan batas waktu yang ditentukan.",
+        "Cocokkan jenis manfaat dengan peristiwa serta bukti yang tersedia.",
+        "Gunakan saluran resmi untuk penyerahan dokumen pribadi.",
+        "Catat nomor referensi dan tindak lanjut; keputusan akhir ada pada perusahaan."
+      ],
+      "keywords": [
+        "klaim",
+        "Menelusuri prosedur klaim"
+      ],
+      "terms": [
+        "klaim",
+        "cashless",
+        "reimbursement",
+        "lump-sum",
+        "deductible",
+        "co-share",
+        "survival-period"
+      ],
+      "passage": "editorial-klaim"
+    },
+    {
+      "slug": "cara-pembayaran-manfaat",
+      "kind": "guide",
+      "title": "Cashless, reimbursement, atau santunan?",
+      "summary": "Pahami mekanismenya sebelum membandingkan nominal manfaat.",
+      "body": "Panduan belajar mandiri. Gunakan dokumen produk yang sesuai dan konfirmasikan informasi yang belum jelas melalui saluran resmi. Checklist ini tidak mengirim atau menyimpan informasi pribadi.",
+      "steps": [
+        "Cari nama dan definisi manfaat pada polis.",
+        "Periksa apakah manfaat mengganti biaya atau berupa santunan.",
+        "Untuk cashless, baca jaringan, persetujuan, dan bagian biaya sendiri.",
+        "Untuk reimbursement, lihat bukti biaya dan prosedur pengajuan.",
+        "Untuk santunan, baca pemicu manfaat dan syarat yang harus terpenuhi."
+      ],
+      "keywords": [
+        "klaim",
+        "Cashless, reimbursement, atau santunan?"
+      ],
+      "terms": [
+        "klaim",
+        "cashless",
+        "reimbursement",
+        "lump-sum",
+        "deductible",
+        "co-share",
+        "survival-period"
+      ],
+      "passage": "editorial-klaim"
+    },
+    {
+      "slug": "apa-itu-asuransi",
+      "kind": "faq",
+      "title": "Mulai dari mana untuk memahami asuransi?",
+      "summary": "Mulai dari risiko, lalu pelajari apa yang dijamin, apa yang tidak dijamin, dan kewajiban dalam polis. Gunakan peta untuk membuka istilah yang belum familiar.",
+      "body": "Mulai dari risiko, lalu pelajari apa yang dijamin, apa yang tidak dijamin, dan kewajiban dalam polis. Gunakan peta untuk membuka istilah yang belum familiar.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "asuransi",
+        "risiko",
+        "polis"
+      ],
+      "terms": [
+        "asuransi",
+        "risiko",
+        "polis"
+      ],
+      "passage": "editorial-dasar"
+    },
+    {
+      "slug": "premi-bukan-tabungan",
+      "kind": "faq",
+      "title": "Apakah premi sama dengan tabungan?",
+      "summary": "Premi adalah pembayaran sesuai kontrak pertanggungan. Adanya unsur investasi atau nilai tunai pada produk tertentu tidak membuat seluruh premi menjadi tabungan. Baca struktur produk, biaya, dan risikonya.",
+      "body": "Premi adalah pembayaran sesuai kontrak pertanggungan. Adanya unsur investasi atau nilai tunai pada produk tertentu tidak membuat seluruh premi menjadi tabungan. Baca struktur produk, biaya, dan risikonya.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "premi",
+        "asuransi"
+      ],
+      "terms": [
+        "premi",
+        "asuransi"
+      ],
+      "passage": "editorial-dasar"
+    },
+    {
+      "slug": "cashless-bukan-tanpa-batas",
+      "kind": "faq",
+      "title": "Apakah cashless berarti semua biaya dibayar?",
+      "summary": "Cashless menjelaskan fasilitas penyelesaian tagihan. Cakupan, jaringan, persetujuan, batas manfaat, dan biaya yang ditanggung sendiri tetap mengikuti ketentuan polis.",
+      "body": "Cashless menjelaskan fasilitas penyelesaian tagihan. Cakupan, jaringan, persetujuan, batas manfaat, dan biaya yang ditanggung sendiri tetap mengikuti ketentuan polis.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "cashless",
+        "deductible",
+        "co-share"
+      ],
+      "terms": [
+        "cashless",
+        "deductible",
+        "co-share"
+      ],
+      "passage": "editorial-klaim"
+    },
+    {
+      "slug": "beda-reimbursement",
+      "kind": "faq",
+      "title": "Apa beda reimbursement dan santunan sekaligus?",
+      "summary": "Reimbursement berkaitan dengan penggantian biaya yang memenuhi syarat. Santunan sekaligus dibayarkan berdasarkan pemicu manfaat dalam polis. Keduanya tidak dapat disamakan hanya dari nominalnya.",
+      "body": "Reimbursement berkaitan dengan penggantian biaya yang memenuhi syarat. Santunan sekaligus dibayarkan berdasarkan pemicu manfaat dalam polis. Keduanya tidak dapat disamakan hanya dari nominalnya.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "reimbursement",
+        "lump-sum"
+      ],
+      "terms": [
+        "reimbursement",
+        "lump-sum"
+      ],
+      "passage": "editorial-klaim"
+    },
+    {
+      "slug": "riplay-dan-polis",
+      "kind": "faq",
+      "title": "Apakah RIPLAY menggantikan polis?",
+      "summary": "RIPLAY merangkum informasi produk dan layanan. Ketentuan lengkap, hak, kewajiban, serta pertanggungan mengikuti dokumen kontrak yang berlaku. Baca keduanya dan tanyakan perbedaan yang ditemukan.",
+      "body": "RIPLAY merangkum informasi produk dan layanan. Ketentuan lengkap, hak, kewajiban, serta pertanggungan mengikuti dokumen kontrak yang berlaku. Baca keduanya dan tanyakan perbedaan yang ditemukan.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "riplay",
+        "polis"
+      ],
+      "terms": [
+        "riplay",
+        "polis"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "pihak-dalam-polis",
+      "kind": "faq",
+      "title": "Apakah pemegang polis selalu tertanggung?",
+      "summary": "Tidak selalu. Pemegang polis memiliki kontrak, sedangkan tertanggung adalah orang yang risikonya dipertanggungkan. Periksa nama dan peran pada dokumen.",
+      "body": "Tidak selalu. Pemegang polis memiliki kontrak, sedangkan tertanggung adalah orang yang risikonya dipertanggungkan. Periksa nama dan peran pada dokumen.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "pemegang-polis",
+        "tertanggung",
+        "polis"
+      ],
+      "terms": [
+        "pemegang-polis",
+        "tertanggung",
+        "polis"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "siapa-penerima",
+      "kind": "faq",
+      "title": "Di mana memeriksa penerima manfaat?",
+      "summary": "Lihat penunjukan penerima manfaat pada dokumen polis dan prosedur perubahan melalui perusahaan. Penerima manfaat mempunyai peran yang berbeda dari pemegang polis dan tertanggung.",
+      "body": "Lihat penunjukan penerima manfaat pada dokumen polis dan prosedur perubahan melalui perusahaan. Penerima manfaat mempunyai peran yang berbeda dari pemegang polis dan tertanggung.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "penerima-manfaat",
+        "polis"
+      ],
+      "terms": [
+        "penerima-manfaat",
+        "polis"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "apa-itu-rider",
+      "kind": "faq",
+      "title": "Apa yang perlu dicek sebelum memahami rider?",
+      "summary": "Periksa polis dasar yang kompatibel, manfaat yang ditambahkan, biaya, syarat berlaku, dan akibat perubahan polis dasar terhadap rider. Jangan menganggap setiap rider dapat berdiri sendiri.",
+      "body": "Periksa polis dasar yang kompatibel, manfaat yang ditambahkan, biaya, syarat berlaku, dan akibat perubahan polis dasar terhadap rider. Jangan menganggap setiap rider dapat berdiri sendiri.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "rider",
+        "polis-dasar"
+      ],
+      "terms": [
+        "rider",
+        "polis-dasar"
+      ],
+      "passage": "editorial-proteksi"
+    },
+    {
+      "slug": "masa-tunggu",
+      "kind": "faq",
+      "title": "Apakah semua manfaat punya masa tunggu yang sama?",
+      "summary": "Jangan mengasumsikannya. Baca syarat masing-masing manfaat dan tanggal mulai berlaku. Masa tunggu dan survival period juga mempunyai fungsi yang berbeda.",
+      "body": "Jangan mengasumsikannya. Baca syarat masing-masing manfaat dan tanggal mulai berlaku. Masa tunggu dan survival period juga mempunyai fungsi yang berbeda.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "masa-tunggu",
+        "survival-period"
+      ],
+      "terms": [
+        "masa-tunggu",
+        "survival-period"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "keputusan-underwriting",
+      "kind": "faq",
+      "title": "Apakah agen menentukan hasil underwriting?",
+      "summary": "Agen dapat membantu menyampaikan informasi dengan benar. Perusahaan menilai risiko dan menetapkan keputusan. Pengajuan atau pembayaran saja belum membuktikan pertanggungan sudah berlaku.",
+      "body": "Agen dapat membantu menyampaikan informasi dengan benar. Perusahaan menilai risiko dan menetapkan keputusan. Pengajuan atau pembayaran saja belum membuktikan pertanggungan sudah berlaku.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "agen",
+        "underwriting",
+        "spaj"
+      ],
+      "terms": [
+        "agen",
+        "underwriting",
+        "spaj"
+      ],
+      "passage": "editorial-proses"
+    },
+    {
+      "slug": "jaminan-klaim",
+      "kind": "faq",
+      "title": "Apakah pendampingan agen menjamin klaim disetujui?",
+      "summary": "Pendampingan membantu memahami proses dan kelengkapan dokumen. Persetujuan klaim tetap ditetapkan perusahaan berdasarkan polis dan bukti yang diajukan.",
+      "body": "Pendampingan membantu memahami proses dan kelengkapan dokumen. Persetujuan klaim tetap ditetapkan perusahaan berdasarkan polis dan bukti yang diajukan.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "agen",
+        "klaim"
+      ],
+      "terms": [
+        "agen",
+        "klaim"
+      ],
+      "passage": "editorial-proses"
+    },
+    {
+      "slug": "polis-aktif",
+      "kind": "faq",
+      "title": "Bagaimana memastikan polis sudah aktif?",
+      "summary": "Periksa konfirmasi perusahaan, tanggal efektif, dan kewajiban yang harus dipenuhi. Status pengajuan berbeda dari status pertanggungan. Syarat manfaat tertentu tetap perlu diperiksa.",
+      "body": "Periksa konfirmasi perusahaan, tanggal efektif, dan kewajiban yang harus dipenuhi. Status pengajuan berbeda dari status pertanggungan. Syarat manfaat tertentu tetap perlu diperiksa.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "inforce",
+        "spaj",
+        "masa-tunggu"
+      ],
+      "terms": [
+        "inforce",
+        "spaj",
+        "masa-tunggu"
+      ],
+      "passage": "editorial-proses"
+    },
+    {
+      "slug": "mengapa-pengecualian",
+      "kind": "faq",
+      "title": "Mengapa pengecualian perlu dibaca bersama manfaat?",
+      "summary": "Nama manfaat belum menjelaskan seluruh cakupan. Pengecualian menunjukkan kondisi yang tidak dijamin, sehingga membantu membaca batas perlindungan secara utuh.",
+      "body": "Nama manfaat belum menjelaskan seluruh cakupan. Pengecualian menunjukkan kondisi yang tidak dijamin, sehingga membantu membaca batas perlindungan secara utuh.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "pengecualian",
+        "manfaat"
+      ],
+      "terms": [
+        "pengecualian",
+        "manfaat"
+      ],
+      "passage": "editorial-polis"
+    },
+    {
+      "slug": "syariah",
+      "kind": "faq",
+      "title": "Apa yang dipelajari lebih dulu dalam asuransi syariah?",
+      "summary": "Kenali prinsip saling menolong, akad, dana tabarru’, dan imbalan pengelolaan. Setelah itu baca penerapannya pada dokumen produk yang sedang dipelajari.",
+      "body": "Kenali prinsip saling menolong, akad, dana tabarru’, dan imbalan pengelolaan. Setelah itu baca penerapannya pada dokumen produk yang sedang dipelajari.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "asuransi-syariah",
+        "tabarru",
+        "ujrah"
+      ],
+      "terms": [
+        "asuransi-syariah",
+        "tabarru",
+        "ujrah"
+      ],
+      "passage": "editorial-syariah"
+    },
+    {
+      "slug": "dana-darurat",
+      "kind": "faq",
+      "title": "Apakah dana darurat dan asuransi memiliki fungsi yang sama?",
+      "summary": "Keduanya membantu menghadapi ketidakpastian dengan cara yang berbeda. Dana darurat adalah dana yang bisa diakses, sedangkan asuransi memberikan manfaat sesuai syarat kontrak. Pahami keduanya dalam konteks kebutuhan pribadi.",
+      "body": "Keduanya membantu menghadapi ketidakpastian dengan cara yang berbeda. Dana darurat adalah dana yang bisa diakses, sedangkan asuransi memberikan manfaat sesuai syarat kontrak. Pahami keduanya dalam konteks kebutuhan pribadi.\n\nPenjelasan umum untuk belajar. Ketentuan yang berlaku tetap mengikuti versi dokumen kontrak masing-masing.",
+      "steps": [],
+      "keywords": [
+        "dana-darurat",
+        "asuransi",
+        "risiko"
+      ],
+      "terms": [
+        "dana-darurat",
+        "asuransi",
+        "risiko"
+      ],
+      "passage": "editorial-dasar"
+    },
+    {
+      "slug": "studi-baca-riplay-apm",
+      "kind": "guide",
+      "title": "Studi baca: bagian-bagian RIPLAY kesehatan",
+      "summary": "Latihan menelusuri struktur dokumen Allianz Preferred Medical tanpa menyimpulkan rekomendasi produk.",
+      "body": "Buka sumber resmi, lalu cari identitas penerbit, fitur, manfaat, risiko, biaya, dan ketentuan. Studi kasus ini membantu membaca dokumen. Versi lokal belum dikonfirmasi sebagai versi terkini; tidak ada rekomendasi pembelian atau jaminan manfaat.",
+      "steps": [
+        "Cocokkan nama entitas penerbit dengan dokumen yang Anda baca.",
+        "Tandai bagian manfaat dan baca bersama bagian risiko serta ketentuan.",
+        "Periksa versi dan gunakan dokumen resmi terbaru untuk konfirmasi."
+      ],
+      "keywords": [
+        "riplay",
+        "kesehatan",
+        "allianz"
+      ],
+      "terms": [
+        "riplay",
+        "asuransi-kesehatan",
+        "manfaat"
+      ],
+      "passage": "apm-membaca"
+    }
+  ],
+  "sources": [
+    {
+      "key": "editorial",
+      "title": "Catatan pembelajaran InsuraLab",
+      "publisher": "InsuraLab · materi editorial",
+      "url": null,
+      "notes": "Materi pengantar buatan InsuraLab; belum ditinjau ahli independen. Tidak ada data personal atau salinan dokumen internal."
+    },
+    {
+      "key": "apm",
+      "title": "RIPLAY Umum Allianz Preferred Medical",
+      "publisher": "PT Asuransi Allianz Life Indonesia",
+      "url": "https://www.allianz.co.id/produk/asuransi-individu/asuransi-kesehatan/allianz-preferred-medical.html",
+      "notes": "Dibaca dari salinan lokal brosur/RIPLAY yang juga memiliki halaman produk publik. Rujukan versi lokal, bukan konfirmasi manfaat terkini. File tidak didistribusikan ulang."
+    }
+  ],
+  "passages": [
+    {
+      "key": "editorial-dasar",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Dasar perlindungan",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nRisiko: Kemungkinan suatu peristiwa menimbulkan kerugian. Bedakan peristiwanya dari dampak keuangannya.\n\nAsuransi: Perjanjian perlindungan atas risiko tertentu dengan syarat, kewajiban, dan manfaat yang tertulis dalam polis.\n\nPengalihan risiko: Pada asuransi konvensional, risiko yang disepakati dialihkan kepada penanggung sesuai kontrak.\n\nPremi: Pembayaran untuk pertanggungan sesuai jadwal dan ketentuan polis. Premi tidak otomatis sama dengan tabungan.\n\nManfaat: Pembayaran atau layanan yang diberikan apabila syarat pertanggungan terpenuhi.\n\nUang pertanggungan: Nilai pertanggungan yang tercantum pada polis. Pembayaran tetap mengikuti peristiwa dan ketentuan manfaat.\n\nIndemnitas: Prinsip penggantian kerugian yang menjadi dasar sebagian manfaat penggantian biaya; batas dan syaratnya mengikuti polis.\n\nDana darurat: Dana yang dapat diakses untuk kebutuhan tak terduga. Fungsinya berbeda dari kontrak pertanggungan asuransi."
+    },
+    {
+      "key": "editorial-polis",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Mengenal polis",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nPolis: Dokumen kontrak yang memuat pihak, hak, kewajiban, pertanggungan, serta ketentuan asuransi.\n\nPemegang polis: Pihak yang memiliki kontrak dan menjalankan hak serta kewajiban yang ditetapkan di dalamnya.\n\nTertanggung: Orang yang risikonya dipertanggungkan. Dapat berbeda dari pemegang polis.\n\nPenerima manfaat: Pihak yang ditunjuk atau berhak menerima manfaat sesuai ketentuan polis.\n\nPengecualian: Peristiwa atau kondisi yang dinyatakan tidak dijamin. Baca bersama definisi manfaat.\n\nMasa tunggu: Periode ketika manfaat tertentu belum berlaku menurut ketentuan polis. Tidak sama pada semua manfaat.\n\nMasa mempelajari polis: Kesempatan mempelajari dan menanggapi polis sesuai jangka waktu serta prosedur dalam dokumen produk.\n\nRIPLAY: Ringkasan Informasi Produk dan Layanan. Membantu mengenali produk, tetapi tidak menggantikan ketentuan lengkap polis.\n\nLapse: Keadaan polis tidak berlaku karena kondisi yang ditetapkan kontrak, misalnya kewajiban pembayaran yang tidak terpenuhi."
+    },
+    {
+      "key": "editorial-proteksi",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Jenis proteksi",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nProteksi jiwa: Kategori perlindungan yang membahas dampak finansial meninggal dunia, dengan manfaat sesuai kontrak.\n\nProteksi kesehatan: Perlindungan terkait biaya atau peristiwa kesehatan yang dijamin. Cara pembayaran dan batas manfaat berbeda antarpolis.\n\nPenyakit kritis: Kategori manfaat untuk kondisi yang memenuhi definisi penyakit kritis dalam polis; diagnosis saja belum menjelaskan seluruh syarat klaim.\n\nDisabilitas tetap: Kategori manfaat dengan definisi disabilitas tetap yang ditentukan polis. Periksa kriteria dan bukti yang diminta.\n\nProteksi kecelakaan: Kategori manfaat terkait kecelakaan sesuai definisi, peristiwa, dan tabel manfaat dalam polis.\n\nManfaat tambahan: Pertanggungan tambahan yang dilekatkan pada polis dasar yang sesuai. Periksa ketergantungan dan biaya masing-masing.\n\nPolis dasar: Kontrak utama yang menjadi tempat melekatnya manfaat tambahan atau rider.\n\nKebutuhan pengganti penghasilan: Topik untuk memahami dampak hilangnya penghasilan terhadap tanggungan; bukan penilaian harga nyawa atau rekomendasi nominal otomatis."
+    },
+    {
+      "key": "editorial-klaim",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Klaim & layanan",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nKlaim: Permintaan manfaat kepada penanggung atau pengelola setelah terjadi peristiwa yang dianggap memenuhi pertanggungan.\n\nCashless: Fasilitas penyelesaian tagihan melalui jaringan dan prosedur yang disepakati. Tidak berarti seluruh biaya pasti dijamin.\n\nReimbursement: Mekanisme mengajukan penggantian biaya yang telah dibayar, dengan bukti dan syarat sesuai polis.\n\nSantunan sekaligus: Bentuk pembayaran manfaat sekaligus berdasarkan ketentuan, berbeda dari penggantian setiap bukti biaya.\n\nRisiko sendiri: Bagian biaya yang menjadi tanggungan pemegang polis atau tertanggung menurut ketentuan manfaat.\n\nPembagian biaya: Mekanisme membagi biaya yang memenuhi syarat antara nasabah dan penanggung sesuai perhitungan dalam kontrak.\n\nSurvival period: Syarat masa bertahan hidup setelah peristiwa tertentu bila memang diatur pada manfaat terkait."
+    },
+    {
+      "key": "editorial-proses",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Proses & pendampingan",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nUnderwriting: Penilaian risiko oleh perusahaan sebelum menetapkan keputusan pertanggungan. Agen membantu informasi, bukan menetapkan keputusan.\n\nPencatatan awal risiko: Peran pendamping dalam membantu memperoleh dan meneruskan informasi yang akurat untuk proses pengajuan.\n\nPenilaian kesehatan: Bagian proses underwriting yang menilai informasi kesehatan sesuai kebutuhan perusahaan.\n\nPenilaian finansial: Bagian proses underwriting yang menilai kewajaran pertanggungan berdasarkan informasi finansial.\n\nPengajuan asuransi: Dokumen permintaan pertanggungan yang harus diisi lengkap, benar, dan konsisten. Pengajuan belum sama dengan penerimaan.\n\nPolis aktif: Status pertanggungan yang telah memenuhi ketentuan berlakunya polis. Periksa tanggal efektif dan kondisi manfaat.\n\nPendampingan agen: Bantuan untuk memahami informasi, menyiapkan pengajuan, serta menelusuri layanan. Keputusan underwriting dan klaim tetap pada perusahaan."
+    },
+    {
+      "key": "editorial-syariah",
+      "source": "editorial",
+      "version": "12 November 2026 · draf editorial",
+      "locator": "Prinsip syariah",
+      "body": "Catatan pembelajaran InsuraLab. Disusun untuk membantu membaca dokumen, belum ditinjau ahli independen.\n\nAsuransi syariah: Perlindungan berbasis prinsip saling menolong antarpeserta melalui pengelolaan dana dan akad yang dijelaskan pada dokumen produk.\n\nTabarru’: Dana kebajikan peserta yang digunakan untuk saling menolong sesuai ketentuan pengelolaan dalam akad.\n\nTa’awun: Prinsip saling menolong yang mendasari hubungan antarpeserta dalam perlindungan syariah.\n\nUjrah: Imbalan pengelolaan yang ditetapkan sesuai akad. Periksa dasar, nilai, dan waktu pembebanannya pada dokumen.\n\nBerbagi risiko: Pendekatan saling menanggung risiko antarpeserta sesuai ketentuan dana dan akad, dengan perusahaan sebagai pengelola.\n\nWakalah bil ujrah: Akad pemberian kuasa pengelolaan dengan imbalan ujrah sesuai ketentuan yang disepakati."
+    },
+    {
+      "key": "apm-membaca",
+      "source": "apm",
+      "version": "Salinan lokal · versi perlu dicocokkan",
+      "locator": "Halaman 1–3 · fitur, manfaat, risiko",
+      "body": "Catatan baca atas RIPLAY lokal: dokumen memisahkan identitas penerbit, fitur utama, manfaat, risiko, dan ketentuan. Gunakan susunan ini sebagai checklist membaca; nominal, usia, dan manfaat terkini harus dicocokkan kembali dengan dokumen resmi. Ini parafrasa editorial, bukan kutipan atau jaminan produk."
+    }
+  ]
+}

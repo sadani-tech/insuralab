@@ -84,7 +84,7 @@ class Article extends Model
      */
     public function scopePublic(Builder $query): Builder
     {
-        return $query->where('status', ContentStatus::Published->value)
+        return $query->withPublicEvidence()->where('status', ContentStatus::Published->value)
             ->where(function (Builder $q): void {
                 $q->whereNull('published_at')->orWhere('published_at', '<=', now());
             });

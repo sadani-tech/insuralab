@@ -20,6 +20,7 @@ class SourceFactory extends Factory
             'accessed_at' => now(),
             'reference_period' => 'Compilation, '.now()->format('F Y'),
             'notes' => null,
+            'access_level' => 'public',
         ];
     }
 }

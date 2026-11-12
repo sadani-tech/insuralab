@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 /**
@@ -17,13 +18,18 @@ class Source extends Model
 
     protected $fillable = [
         'title', 'publisher', 'url',
-        'published_at', 'accessed_at', 'reference_period', 'notes',
+        'published_at', 'accessed_at', 'reference_period', 'notes', 'access_level',
     ];
 
     protected $casts = [
         'published_at' => 'date',
         'accessed_at' => 'date',
     ];
+
+    public function passages(): HasMany
+    {
+        return $this->hasMany(SourcePassage::class);
+    }
 
     public function articles(): MorphToMany
     {

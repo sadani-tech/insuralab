@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
+  devIndicators: false,
   // Pin the workspace root to this `frontend/` directory. Without this, Next 16
   // walks up the filesystem looking for a lockfile and finds an unrelated
   // `package-lock.json` in a parent folder, producing an ambiguous-root warning

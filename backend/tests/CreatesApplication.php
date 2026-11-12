@@ -16,6 +16,13 @@ trait CreatesApplication
 
         $app->make(Kernel::class)->bootstrap();
 
+        // This guard runs before RefreshDatabase can touch the schema.
+        $connection = $app['config']->get('database.default');
+        $database = $app['config']->get('database.connections.'.$connection.'.database');
+        if (! $app->environment('testing') || $database !== 'insuralab_testing') {
+            throw new \RuntimeException('Refusing tests outside the isolated insuralab_testing database.');
+        }
+
         return $app;
     }
 }

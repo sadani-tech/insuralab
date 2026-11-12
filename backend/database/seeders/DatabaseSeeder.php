@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             QuizSeeder::class,
             LearningPathSeeder::class,
             AssessmentSeeder::class,
+            KnowledgeSeeder::class,
         ]);
     }
 }

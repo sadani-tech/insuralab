@@ -9,6 +9,7 @@ Thumbs.db
 # ---- Claude Code ----
 .claude/
 CLAUDE.md
+!/CLAUDE.md
 
 # ---- Root tooling ----
 /node_modules
@@ -36,6 +37,8 @@ CLAUDE.md
 /frontend/next-env.d.ts
 /frontend/.vercel
 /frontend/*.tsbuildinfo
+/frontend/test-results
+/frontend/playwright-report
 
 # ---- Docker ----
 /docker/data
